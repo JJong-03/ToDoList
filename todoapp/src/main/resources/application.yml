@@ -1,0 +1,16 @@
+#Spring Data Source ?? - MYSQL DB ??
+
+spring:
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/TotoDB?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&autoReconnect=true //3306 뒤에 바꾸기
+    username: mysql-container
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
